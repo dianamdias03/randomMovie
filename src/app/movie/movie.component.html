@@ -1,0 +1,10 @@
+<mat-card id="center">
+  <div *ngFor="let movie of moviesRandom">
+    <mat-card-title> {{ movie.title }} </mat-card-title>
+    <img mat-card-image src="{{ baseUrlImage }}{{ movie.poster_path }}" />
+  </div>
+
+  <button mat-flat-button color="primary" (click)="randomMovies()">
+    Buscar
+  </button>
+</mat-card>
